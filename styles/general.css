@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@400;700;900&display=swap");
+:root {
+  --dark--blue--color: #1e60aa;
+  --light--blue--text: #a8d7ff;
+  --light--blue--color: #51acfb;
+  --gray--color: #6c7176;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+a {
+  color: var(--gray--color);
+  font-family: "Inter", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+
+.dark--blue--text {
+  color: var(--dark--blue--color);
+  font-weight: 600;
+}
+.light--blue--text {
+  color: var(--light--blue--text);
+  font-weight: 600;
+}
+.pre--nav {
+  height: 55px;
+  background: var(--dark--blue--color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 300px;
+  padding-right: 30px;
+  color: #fff;
+}
+.pre--nav i {
+  font-size: 12px;
+}
+.pre--nav a {
+  color: #fff;
+}
+.pre--nav a,
+.pre--nav p {
+  font-size: 14px;
+}
+
+.pre--nav--col1,
+.pre--nav--col2 {
+  display: flex;
+}
+
+.pre--nav--col1 li:first-child {
+  margin-left: 0;
+}
+.pre--nav--col1 li:last-child {
+  margin-right: 0;
+}
+.pre--nav--col1 li {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.pre--nav--email p {
+  margin-right: 3px;
+}
+
+.pre--nav--service i {
+  margin-right: 5px;
+}
+
+/*  */
+
+.pre--nav--col2 p {
+  margin-right: 20px;
+}
+.pre--nav--col2 a {
+  margin-right: 15px;
+  color: #fff;
+}
+
+.pre--nav--col2 a:last-child {
+  margin-right: 0;
+}
+
+/* NAV */
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav--logo {
+  width: 630px;
+  background: var(--dark--blue--color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav--logo svg {
+  width: 65px;
+  fill: #fff;
+}
+.nav--logo svg,
+.nav--logo h2 {
+  position: relative;
+  bottom: 35px;
+}
+.nav--logo h2 {
+  font-size: 36px;
+  line-height: 1;
+  color: #ffffff;
+  margin-top: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo__icon-color02 {
+  fill: var(--light--blue--text);
+}
+
+/* Nav Col 1 */
+
+.nav--col1 {
+  position: relative;
+  display: block;
+  padding-left: 150px;
+}
+.nav--col1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -42px;
+  left: 0px;
+  width: 0;
+  height: 00%;
+  border-bottom: 101px solid #ffffff;
+  border-left: 48px solid transparent;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.nav--col1 ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.nav--col1 ul a {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.nav--col1 ul a:hover {
+  color: var(--light--blue--text);
+}
+.nav--col1 ul li {
+  margin-right: 36px;
+}
+
+.nav--col1 ul li:last-child {
+  margin-right: 0;
+}
+
+/* Nav Col 2 */
+.nav--col2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav--call__us {
+  display: flex;
+  flex-direction: column;
+}
+.nav--call__us p {
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--gray--color);
+}
+.nav--call__us a {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  align-items: center;
+}
+.nav--call__us i {
+  color: var(--dark--blue--color);
+  margin-right: 5px;
+  font-size: 18px;
+}
+.nav--call__us span {
+  color: #ff4917;
+}
+
+.nav--schedule {
+  font-size: 16px;
+  color: var(--dark--blue--color);
+  border: 2px solid var(--dark--blue--color);
+  padding: 4px 31px 4px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+
+.burger--desktop {
+  color: #fff;
+  background: var(--light--blue--color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  height: 100%;
+  position: relative;
+  margin-left: 60px;
+}
+.burger--desktop div {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burger--desktop span {
+  width: 36px;
+  height: 2px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: relative;
+  pointer-events: none;
+}
+
+.burger--desktop span::before {
+  top: -11px;
+  width: 23px;
+}
+.burger--desktop span::after {
+  top: 11px;
+  width: 30px;
+}
+.burger--desktop span::before,
+.burger--desktop span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+}
