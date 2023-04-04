@@ -76,6 +76,11 @@
 }
 .first--section--img__box {
   position: relative;
+  width: 450px;
+  height: 100%;
+}
+.first--section--img__box img {
+  width: 100%;
 }
 .box--inner__div {
   position: absolute;
@@ -99,4 +104,55 @@
   color: var(--light--blue--color);
   font-size: 16px;
   margin-top: 5px;
+}
+
+/* Rate Section */
+
+.rate--section {
+  padding: 60px 0;
+}
+.rate--section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rate--section h2 {
+  color: #000;
+  font-size: 64px;
+}
+
+#rate--first__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#rate--first__div h4 {
+  margin: 1rem 0;
+  font-size: 28px;
+  font-weight: normal;
+}
+.rate--stars {
+  font-size: 40px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+}
+.five__reviews--div {
+  width: 200px;
+  height: 20px;
+  background: rgb(240, 240, 240);
+  position: relative;
+}
+
+.five__reviews--div::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  background: #ffea00;
 }

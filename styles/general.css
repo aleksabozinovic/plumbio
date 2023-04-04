@@ -223,52 +223,5 @@ nav {
   align-items: center;
   justify-content: center;
   margin-left: 60px;
-}
-
-.burger--desktop {
-  color: #fff;
-  background: var(--light--blue--color);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  width: 100px;
-  height: 100%;
-  position: relative;
-  margin-left: 60px;
-}
-.burger--desktop div {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.burger--desktop span {
-  width: 36px;
-  height: 2px;
-  background-color: #ffffff;
-  display: inline-block;
-  position: relative;
-  pointer-events: none;
-}
-
-.burger--desktop span::before {
-  top: -11px;
-  width: 23px;
-}
-.burger--desktop span::after {
-  top: 11px;
-  width: 30px;
-}
-.burger--desktop span::before,
-.burger--desktop span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 2px;
-  background-color: #ffffff;
-  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
+  margin-right: 40px;
 }
