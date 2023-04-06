@@ -139,6 +139,9 @@
 .review {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 16px;
 }
 .five__reviews--div {
   width: 200px;
@@ -155,4 +158,34 @@
   width: 90%;
   height: 100%;
   background: #ffea00;
+}
+.five__reviews--div {
+  margin: 0 30px;
+}
+
+.second__review .five__reviews--div::after {
+  width: 6%;
+}
+
+.second__review p {
+  margin-right: 10px;
+}
+
+.third__review .five__reviews--div::after {
+  width: 3%;
+}
+.third__review p,
+.fourth__review p {
+  margin-right: 23px;
+}
+
+.fourth__review .five__reviews--div::after {
+  width: 00%;
+}
+
+.fifth__review .five__reviews--div::after {
+  width: 00%;
+}
+.fifth__review p {
+  margin-right: 31px;
 }
