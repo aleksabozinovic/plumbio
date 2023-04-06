@@ -120,6 +120,7 @@
 .rate--section h2 {
   color: #000;
   font-size: 64px;
+  font-family: "Inter", sans-serif;
 }
 
 #rate--first__div {
@@ -188,4 +189,108 @@
 }
 .fifth__review p {
   margin-right: 31px;
+}
+
+/* Areas Section */
+
+.areas__bg {
+  position: absolute;
+  left: -170px;
+}
+
+.areas__section .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.areas__row {
+  display: flex;
+}
+
+.areas--col1 {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+}
+
+.areas--col1 li {
+  margin-bottom: 2rem;
+}
+
+.areas--col1 a {
+  font-size: 16px;
+}
+.areas--col1 a span::after {
+  bottom: -5px;
+  left: 0;
+  width: 00%;
+  content: "";
+  position: absolute;
+  background: var(--dark--blue--color);
+  height: 2px;
+  transition: all 0.3s ease;
+}
+
+.areas--col1 a:hover span::after {
+  width: 100%;
+}
+.areas--col1 a i {
+  margin-right: 6px;
+}
+.areas--col1 a span {
+  color: var(--dark--blue--color);
+  font-weight: 600;
+  position: relative;
+}
+
+.areas--col2 {
+  flex: 1;
+  padding-left: 5rem;
+}
+
+.areas--col2 .light--blue--text {
+  font-weight: 600;
+  position: relative;
+  font-size: 18px;
+  color: #51acfb;
+}
+.areas--col2 .light--blue--text::before {
+  content: "";
+  display: inline-block;
+  background-color: #51acfb;
+  width: 50px;
+  height: 2px;
+  margin-right: 20px;
+  position: relative;
+  top: -3px;
+}
+.areas--col2 h3 {
+  font-size: 42px;
+  color: var(--dark--blue--color);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.areas__description {
+  line-height: 1.5;
+  font-size: 16px;
+  padding-right: 5rem;
+  margin-bottom: 2rem;
+}
+
+.areas--col2 a {
+  display: inline-flex;
+  font-size: 16px;
+  padding: 4px 31px 4px;
+  height: 56px;
+  color: var(--dark--blue--color);
+  border: 2px solid var(--dark--blue--color);
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  align-items: center;
 }
