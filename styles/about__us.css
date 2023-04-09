@@ -1,0 +1,81 @@
+@import url("/styles/general.css");
+
+.first__section {
+  padding: 100px 0;
+}
+
+.first__section .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.first__section--row {
+  display: flex;
+  justify-content: center;
+}
+
+.first__section--col1,
+.first__section--col2 {
+  position: relative;
+  width: 100%;
+}
+.first__section--col1 img {
+  max-width: 100%;
+  height: auto;
+}
+.first__section--col1 #second__image {
+  position: absolute;
+  bottom: -20px;
+  left: -40px;
+}
+.first__section--col2 .light--blue--text {
+  color: #51acfb;
+  font-weight: 600;
+  position: relative;
+}
+.first__section--col2 .light--blue--text::before {
+  content: "";
+  display: inline-block;
+  background-color: #51acfb;
+  width: 50px;
+  height: 2px;
+  margin-right: 20px;
+  position: relative;
+  top: -3px;
+}
+
+.first__section--col2 h2 {
+  font-size: 46px;
+  font-family: "Inter", sans-serif;
+  color: #0c4c93;
+  line-height: 55px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.first__section--col2 p {
+  max-width: 450px;
+  font-size: 16px;
+  line-height: 28px;
+}
+.first__section--col2 p.dark--blue--text {
+  color: #0c4c93;
+}
+.first__section--col2 #first__section--last__p {
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+
+.up__line {
+  width: 1px;
+  height: 50px;
+  background: #000;
+}
+
+.signature__div {
+  display: flex;
+  align-items: center;
+}
+
+.signature__div p {
+  margin-left: 20px;
+}
