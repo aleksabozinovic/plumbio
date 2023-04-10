@@ -259,6 +259,7 @@ footer .container {
   align-items: center;
   margin-top: -90px;
   padding: 0 15px;
+  z-index: 2;
 }
 .droplet__icon {
   position: relative;
@@ -300,6 +301,17 @@ footer .container {
   justify-content: center;
   margin-top: 2rem;
   color: #fff;
+  z-index: 2;
+}
+.footer__logo svg {
+  width: 5rem;
+  z-index: 2;
+  fill: #fff;
+}
+.footer__logo h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0.5rem;
 }
 
 .footer__social--icons p {
@@ -332,4 +344,6 @@ footer .container {
   transform: translate(-50%, -50%);
   opacity: 0.2;
   width: 1200px;
+  z-index: 0;
+  pointer-events: none;
 }
