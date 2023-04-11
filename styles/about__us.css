@@ -76,6 +76,12 @@
   align-items: center;
 }
 
+.signature__div h4 {
+  font-size: 24px;
+  margin-right: 20px;
+  font-weight: 600;
+  color: #000;
+}
 .signature__div p {
   margin-left: 20px;
 }
