@@ -85,3 +85,65 @@
 .signature__div p {
   margin-left: 20px;
 }
+@media screen and (max-width: 1300px) {
+  .first__section .container {
+    max-width: 900px;
+  }
+  .first__section--col2 {
+    margin-left: 2rem;
+  }
+  .first__section--col1 #second__image {
+    bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .first__section .container {
+    max-width: 800px;
+  }
+  .first__section--row {
+    flex-direction: column;
+  }
+  .first__section--col2 {
+    margin-left: 0;
+  }
+  .first__section--col1 {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+  }
+  .first__section--col1 #second__image {
+    left: 80px;
+    bottom: -95px;
+  }
+  .first__section--col2 p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .first__section--col1 #second__image {
+    display: none;
+  }
+  .first__section--col1 {
+    margin-bottom: 3rem;
+  }
+  .first__section .container {
+    max-width: 600px;
+  }
+  .first__section--col1 {
+    align-items: unset;
+  }
+}
+@media screen and (max-width: 610px) {
+  .first__section .container {
+    max-width: 500px;
+    padding: 0 10px;
+  }
+  .first__section--col2 h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
