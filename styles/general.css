@@ -42,9 +42,6 @@ h6 {
   font-weight: 600;
 }
 
-.mobile--nav {
-  display: none;
-}
 .pre--nav {
   height: 55px;
   background: var(--dark--blue--color);
@@ -125,6 +122,7 @@ h6 {
   top: 0px;
   padding: 60px 30px;
   padding-right: 80px;
+  overflow-y: scroll;
 }
 .mobile--nav.active {
   display: block;
@@ -200,6 +198,25 @@ h6 {
 }
 .mobile__about p {
   font-size: 16px;
+}
+.mobile__follow--us h4 {
+  font-size: 20px;
+  color: var(--dark--blue--color);
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+.mobile--nav__socials {
+  display: flex;
+}
+.mobile--nav__socials a {
+  background: #f8f8fa;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+  font-size: 18px;
 }
 
 /* NAV  */
@@ -581,6 +598,11 @@ footer .container {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .mobile--nav {
+    width: 60%;
+  }
+}
 @media screen and (max-width: 825px) {
   .footer__divs {
     flex-direction: column;
@@ -621,6 +643,7 @@ footer .container {
     padding-right: 15px;
   }
 }
+
 @media screen and (max-width: 440px) {
   .nav--call__us p {
     font-size: 11px;
@@ -631,19 +654,24 @@ footer .container {
   .nav--call__us {
     margin-right: 10px;
   }
+}
+
+@media screen and (max-width: 475px) {
+  .mobile--nav {
+    width: 80%;
+  }
   .nav--logo h2 {
     font-size: 26px;
-  }
-  .nav--logo p {
-    font-size: 14px;
-    margin-top: 2px;
   }
   .nav--logo h2,
   .nav--logo p {
     bottom: 20px;
   }
+  .nav--logo p {
+    font-size: 14px;
+    margin-top: 2px;
+  }
 }
-
 @media screen and (max-width: 425px) {
   footer {
     margin-top: 1rem;
