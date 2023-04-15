@@ -226,7 +226,20 @@ nav {
   display: flex;
   align-items: center;
   z-index: 11;
+  background: #fff;
 }
+
+nav.sticky {
+  position: fixed;
+  box-shadow: 0px 20px 30px rgba(26, 54, 85, 0.1);
+  top: 0;
+}
+
+nav.sticky .nav--logo h2,
+nav.sticky .nav--logo p {
+  bottom: -13px;
+}
+
 .nav--logo {
   width: 630px;
   background: var(--dark--blue--color);
@@ -271,7 +284,7 @@ nav {
   content: "";
   display: block;
   position: absolute;
-  bottom: -42px;
+  bottom: -40px;
   left: 0px;
   width: 0;
   height: 00%;
@@ -543,7 +556,17 @@ footer .container {
     right: 5px;
   }
   .nav--col1::before {
-    bottom: -66px;
+    bottom: -35px;
+    border-bottom: 70px solid #ffffff;
+  }
+  nav.sticky .nav--logo h2 {
+    font-size: 24px;
+  }
+  nav.sticky .nav--logo p {
+    font-size: 14px;
+  }
+  nav.sticky .nav--logo {
+    padding-right: 33px;
   }
   .open--navigation--desktop {
     width: 70px;
@@ -691,6 +714,13 @@ footer .container {
   }
   .pre--nav {
     padding-left: 0;
+  }
+
+  nav.sticky .nav--logo h2 {
+    font-size: 20px;
+  }
+  nav.sticky .nav--logo p {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 375px) {
