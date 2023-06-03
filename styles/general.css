@@ -327,6 +327,7 @@ nav.sticky .nav--logo p {
 .nav--call__us {
   display: flex;
   flex-direction: column;
+  margin-right: 40px;
 }
 .nav--call__us p {
   font-size: 13px;
@@ -346,19 +347,6 @@ nav.sticky .nav--logo p {
 }
 .nav--call__us span {
   color: #ff4917;
-}
-
-.nav--schedule {
-  font-size: 16px;
-  color: var(--dark--blue--color);
-  border: 2px solid var(--dark--blue--color);
-  padding: 4px 31px 4px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 60px;
-  margin-right: 40px;
 }
 
 /* footer */

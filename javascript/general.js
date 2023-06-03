@@ -24,10 +24,10 @@ function scrollFunction() {
     document.documentElement.scrollTop > navHeight
   ) {
     nav.classList.add("sticky");
-    document.querySelector(".first--section").style.paddingTop = `240px`;
+    document.querySelector(".first--section").style.paddingTop = `100px`;
   } else {
     nav.classList.remove("sticky");
-    document.querySelector(".first--section").style.paddingTop = `140px`;
+    document.querySelector(".first--section").style.paddingTop = `00px`;
   }
 }
 
